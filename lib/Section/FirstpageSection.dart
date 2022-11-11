@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stylish_sathi/Constant/font.dart';
 
 import '../Component/ServicesList.dart';
 
@@ -14,6 +15,7 @@ class SearchBar_Section extends StatelessWidget {
       child: SizedBox(
         height: 50,
         child: TextFormField(
+          style: kNumans_400,
           decoration: InputDecoration(
             prefixIcon: Icon(Icons.search),
             labelText: 'Search Your Grooming Parter...',
@@ -53,7 +55,7 @@ class Recommended_Text_Section extends StatelessWidget {
       padding: const EdgeInsets.all(15.0),
       child: Text(
         "Recommended",
-        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+        style: kMontserrat_600.copyWith(fontSize: 25),
       ),
     );
   }

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Projects\\stylish_sathi\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "D:\\Eemayas\\3rd sem\\Stylish Sathi\\stylish_sathi\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "E:\\Projects\\stylish_sathi\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "D:\\Eemayas\\3rd sem\\Stylish Sathi\\stylish_sathi\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

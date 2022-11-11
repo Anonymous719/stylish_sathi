@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stylish_sathi/Constant/font.dart';
 
 class list_children_Elements extends StatelessWidget {
   const list_children_Elements({
@@ -41,14 +42,14 @@ class list_children_Elements extends StatelessWidget {
           padding: EdgeInsets.only(left: 10),
           child: Text(
             MainText,
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            style: kCabin_600.copyWith(fontSize: 20),
           ),
         ),
         Padding(
           padding: EdgeInsets.only(left: 10),
           child: Text(
             SecondatText,
-            style: TextStyle(fontSize: 15),
+            style: kMontserrat_600,
           ),
         )
       ],

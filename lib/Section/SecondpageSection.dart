@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:stylish_sathi/Constant/colors.dart';
+import 'package:stylish_sathi/Constant/font.dart';
 import 'package:stylish_sathi/ReviewTabBarPage.dart';
 import 'package:stylish_sathi/SecondPage.dart';
 
@@ -18,12 +19,18 @@ class PhotoSlider_Section extends StatelessWidget {
   Widget build(BuildContext context) {
     return CarouselSlider(
       options: CarouselOptions(
-        aspectRatio:488/310,
+        autoPlay: true,
+        aspectRatio: 488 / 310,
         viewportFraction: 1,
         enlargeCenterPage: true,
-      ), items: [
-        Image.asset("images/Storephoto.png",fit: BoxFit.fill,width: double.infinity,),
-    ],
+      ),
+      items: [
+        Image.asset(
+          "images/Storephoto.png",
+          fit: BoxFit.fill,
+          width: double.infinity,
+        ),
+      ],
     );
   }
 }
@@ -50,7 +57,7 @@ class _ServiceName_SectionState extends State<ServiceName_Section> {
           alignment: Alignment.topLeft,
           child: Text(
             widget.ServiceName,
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+            style: kPopins_600.copyWith(fontSize: 20),
           ),
         ),
         Spacer(),
@@ -87,7 +94,7 @@ class Address_Section extends StatelessWidget {
       alignment: Alignment.topLeft,
       child: Text(
         Address,
-        style: TextStyle(fontSize: 17),
+        style: kMontserrat_600.copyWith(fontSize: 12),
       ),
     );
   }
@@ -109,7 +116,7 @@ class OpeningTime_Section extends StatelessWidget {
         ),
         Text(
           " Open Now: 9:00 am-7:30 pm",
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+          style: kMontserrat_600.copyWith(fontSize: 15),
         )
       ],
     );
@@ -134,7 +141,7 @@ class ShowMap_Section extends StatelessWidget {
           ),
           Text(
             " Show on map",
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            style: kMontserrat_600.copyWith(fontSize: 15),
           )
         ],
       ),
@@ -154,6 +161,7 @@ class TabBarHeading_Section extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: TabBar(
+        labelStyle: kMontserrat_600,
         controller: tabController,
         labelColor: Colors.black,
         unselectedLabelColor: Colors.grey,
@@ -161,7 +169,9 @@ class TabBarHeading_Section extends StatelessWidget {
         indicatorWeight: 5,
         indicatorPadding: EdgeInsets.fromLTRB(0, 0, 0, 5),
         tabs: [
-          Tab(text: "Services"),
+          Tab(
+            text: "Services",
+          ),
           Tab(text: "Reviews"),
           Tab(text: "About us")
         ],

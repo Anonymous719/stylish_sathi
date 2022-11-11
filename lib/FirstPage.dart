@@ -32,8 +32,9 @@ class homepage extends StatelessWidget {
                       ),
                       Text(
                         "Slogan Here",
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 15,),
+                        style: kNumans_400.copyWith(
+                          fontSize: 15,
+                        ),
                       ),
                     ],
                   ),
@@ -101,7 +102,7 @@ class homepage extends StatelessWidget {
                 padding: const EdgeInsets.all(15.0),
                 child: Text(
                   "Near By",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+                  style: kMontserrat_600.copyWith(fontSize: 25),
                 ),
               ),
               TopSuggestion_Section(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stylish_sathi/Constant/font.dart';
 
 import '../Constant/colors.dart';
 
@@ -14,13 +15,12 @@ class Services_list extends StatelessWidget {
       children: [
         Container(
           margin: EdgeInsets.all(10.0),
-          decoration:
-              BoxDecoration(color: IconColor, shape: BoxShape.circle),
+          decoration: BoxDecoration(color: IconColor, shape: BoxShape.circle),
           child: SizedBox(width: 90, height: 90, child: PhotoWidget),
         ),
         Text(
           Service_Name,
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+          style: kCabin_500.copyWith(fontSize: 15),
         )
       ],
     );
