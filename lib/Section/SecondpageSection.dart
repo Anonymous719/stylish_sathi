@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:stylish_sathi/Constant/colors.dart';
 import 'package:stylish_sathi/ReviewTabBarPage.dart';
 
 import '../ServicesTabBarPage.dart';
@@ -17,13 +18,13 @@ class PhotoSlider_Section extends StatelessWidget {
     return CarouselSlider(
         items: bottomoptions,
         options: CarouselOptions(
-          height: 200,
+          height: 260,
           aspectRatio: 16 / 9,
-          viewportFraction: 0.8,
+          viewportFraction: 0.9,
           initialPage: 0,
           enableInfiniteScroll: true,
           reverse: false,
-          autoPlay: true,
+          //autoPlay: true,
           autoPlayInterval: Duration(seconds: 3),
           autoPlayAnimationDuration: Duration(milliseconds: 1000),
           autoPlayCurve: Curves.fastOutSlowIn,
@@ -33,10 +34,19 @@ class PhotoSlider_Section extends StatelessWidget {
   }
 }
 
-class ServiceName_Section extends StatelessWidget {
+class ServiceName_Section extends StatefulWidget {
   final String ServiceName;
 
-  const ServiceName_Section({required this.ServiceName});
+  ServiceName_Section({
+    required this.ServiceName,
+  });
+
+  @override
+  State<ServiceName_Section> createState() => _ServiceName_SectionState();
+}
+
+class _ServiceName_SectionState extends State<ServiceName_Section> {
+  bool isFav = false;
 
   @override
   Widget build(BuildContext context) {
@@ -45,17 +55,26 @@ class ServiceName_Section extends StatelessWidget {
         Align(
           alignment: Alignment.topLeft,
           child: Text(
-            ServiceName,
+            widget.ServiceName,
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
           ),
         ),
         Spacer(),
         Align(
           alignment: Alignment.topRight,
-          child: Icon(
-            Icons.favorite,
-            size: 25,
-            color: Colors.red,
+          child: GestureDetector(
+            onTap: () {
+              isFav = !isFav;
+              print("pressed");
+              setState(() {});
+            },
+            child: isFav
+                ? Icon(Icons.favorite, size: 25, color: FavColor)
+                : Icon(
+                    Icons.favorite_border,
+                    size: 25,
+                    color: FavColor,
+                  ),
           ),
         ),
       ],
@@ -92,7 +111,7 @@ class OpeningTime_Section extends StatelessWidget {
         Icon(
           Icons.timer,
           size: 20,
-          color: Colors.orange,
+          color: IconColor,
         ),
         Text(
           " Open Now: 9:00 am-7:30 pm",
@@ -117,7 +136,7 @@ class ShowMap_Section extends StatelessWidget {
           Icon(
             Icons.near_me,
             size: 20,
-            color: Colors.orange,
+            color: IconColor,
           ),
           Text(
             " Show on map",
@@ -144,7 +163,7 @@ class TabBarHeading_Section extends StatelessWidget {
         controller: tabController,
         labelColor: Colors.black,
         unselectedLabelColor: Colors.grey,
-        indicatorColor: Colors.orange,
+        indicatorColor: IconColor,
         indicatorWeight: 5,
         indicatorPadding: EdgeInsets.fromLTRB(0, 0, 0, 5),
         tabs: [

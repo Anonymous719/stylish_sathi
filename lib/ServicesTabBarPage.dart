@@ -48,47 +48,55 @@ class _ServiceTabCardInfoState extends State<ServiceTabCardInfo> {
                 "Men Haircut",
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
               ),
-              Row(children: [
-                Row(
-                  children: [
-                    Container(
-                      width: 10.0,
-                      height: 10.0,
-                      decoration: BoxDecoration(
-                          shape: BoxShape.circle, color: Colors.black),
-                    ),
-                    Text(
-                      "1hr",
-                      style: TextStyle(fontSize: 15),
-                    ),
-                  ],
-                ),
-                SizedBox(width: 10),
-                Row(
-                  children: [
-                    Container(
-                      width: 10.0,
-                      height: 10.0,
-                      decoration: BoxDecoration(
-                          shape: BoxShape.circle, color: Colors.black),
-                    ),
-                    Text(
-                      "Mens only",
-                      style: TextStyle(fontSize: 15),
-                    ),
-                  ],
-                ),
-              ])
+              Padding(
+                padding: EdgeInsets.symmetric(vertical: 10),
+                child: Row(children: [
+                  Row(
+                    children: [
+                      Container(
+                        width: 10.0,
+                        height: 10.0,
+                        decoration: BoxDecoration(
+                            shape: BoxShape.circle, color: Colors.black),
+                      ),
+                      Text(
+                        "1hr",
+                        style: TextStyle(fontSize: 15),
+                      ),
+                    ],
+                  ),
+                  SizedBox(width: 10),
+                  Row(
+                    children: [
+                      Container(
+                        width: 10.0,
+                        height: 10.0,
+                        decoration: BoxDecoration(
+                            shape: BoxShape.circle, color: Colors.black),
+                      ),
+                      Text(
+                        "Mens only",
+                        style: TextStyle(fontSize: 15),
+                      ),
+                    ],
+                  ),
+                ]),
+              )
             ]),
           ),
           Spacer(),
           Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
                 "Select Stylist",
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
-              Text("NRS:0", style: TextStyle(fontWeight: FontWeight.bold)),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 10),
+                child: Text("NRS:0",
+                    style: TextStyle(fontWeight: FontWeight.bold)),
+              ),
             ],
           )
         ],

@@ -21,7 +21,7 @@ class _storepageState extends State<storepage> with TickerProviderStateMixin {
               ),
           child: Container(
             child: Image(
-              image: AssetImage('images/name.png'),
+              image: AssetImage('images/Storephoto.png'),
             ),
           ),
         ),
