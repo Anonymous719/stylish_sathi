@@ -192,7 +192,7 @@ class TabBarbody_Section extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.maxFinite,
-      height: 500,
+      height: 350,
       child: TabBarView(
         controller: tabController,
         children: [
