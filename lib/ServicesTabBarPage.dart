@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'Constant/colors.dart';
+
 class services extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -29,7 +31,7 @@ class _ServiceTabCardInfoState extends State<ServiceTabCardInfo> {
         children: [
           Container(
             decoration: BoxDecoration(
-                color: isSelected ? Colors.lightBlue : Colors.transparent,
+                color: isSelected ? IconColor : Colors.transparent,
                 borderRadius: BorderRadius.circular(15),
                 border: isSelected
                     ? null
@@ -39,7 +41,7 @@ class _ServiceTabCardInfoState extends State<ServiceTabCardInfo> {
                       )),
             width: 30,
             height: 30,
-            child: isSelected ? Icon(Icons.check) : null,
+            child: isSelected ? Icon(Icons.check,color: Colors.white,) : null,
           ),
           Padding(
             padding: const EdgeInsets.all(10.0),
@@ -60,7 +62,7 @@ class _ServiceTabCardInfoState extends State<ServiceTabCardInfo> {
                             shape: BoxShape.circle, color: Colors.black),
                       ),
                       Text(
-                        "1hr",
+                        " 1hr",
                         style: TextStyle(fontSize: 15),
                       ),
                     ],
@@ -75,7 +77,7 @@ class _ServiceTabCardInfoState extends State<ServiceTabCardInfo> {
                             shape: BoxShape.circle, color: Colors.black),
                       ),
                       Text(
-                        "Mens only",
+                        " Mens only",
                         style: TextStyle(fontSize: 15),
                       ),
                     ],

@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:stylish_sathi/Constant/colors.dart';
 
 import 'FirstPage.dart';
 
@@ -43,7 +44,7 @@ class startpage extends StatelessWidget {
           items: bottomoptions,
           height: 60,
           backgroundColor: Colors.transparent,
-          color: Colors.orange,
+          color: IconColor,
         ),
       ),
     );

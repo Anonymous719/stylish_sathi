@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:stylish_sathi/main.dart';
 
 import 'Component/ServicesList.dart';
 import 'Component/TopSuggestionChildElement.dart';
+import 'Constant/font.dart';
 import 'SecondPage.dart';
 import 'Section/FirstpageSection.dart';
 
@@ -31,7 +33,7 @@ class homepage extends StatelessWidget {
                       Text(
                         "Slogan Here",
                         style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 15),
+                            fontWeight: FontWeight.bold, fontSize: 15,),
                       ),
                     ],
                   ),
@@ -49,15 +51,27 @@ class homepage extends StatelessWidget {
                   Services_list(
                     Service_Name: "Hair",
                     PhotoWidget: Image(
-                      image: AssetImage('images/name.png'),
+                      image: AssetImage('images/hair.png'),
                     ),
                   ),
                   Services_list(
-                    Service_Name: "Hair",
+                    Service_Name: "Beard",
+                    PhotoWidget: Image(
+                      image: AssetImage('images/beard.png'),
+                    ),
+                  ),
+                  Services_list(
+                    Service_Name: "Spa",
+                    PhotoWidget: Image(
+                      image: AssetImage('images/spa.png'),
+                    ),
+                  ),
+                  Services_list(
+                    Service_Name: "Nails",
                     PhotoWidget: Image(
                       image: AssetImage('images/name.png'),
                     ),
-                  )
+                  ),
                 ],
               ),
               SizedBox(
@@ -69,8 +83,12 @@ class homepage extends StatelessWidget {
                   list_children_Elements(
                     MainText: "The Next Level",
                     SecondatText: "The Next Level",
-                    PhotoAddress: Image(
-                      image: AssetImage('images/name.png'),
+                    PhotoAddress: ClipRRect(
+                      borderRadius: BorderRadius.circular(40),
+                      child: Image(
+                        image: AssetImage('images/saloon.png'),
+                        fit: BoxFit.fill,
+                      ),
                     ),
                     OnTAp: () {
                       Navigator.push(context,
@@ -91,8 +109,12 @@ class homepage extends StatelessWidget {
                   list_children_Elements(
                     MainText: "The Next Level",
                     SecondatText: "The Next Level",
-                    PhotoAddress: Image(
-                      image: AssetImage('images/name.png'),
+                    PhotoAddress: ClipRRect(
+                      borderRadius: BorderRadius.circular(40),
+                      child: Image(
+                        image: AssetImage('images/saloon.png'),
+                        fit: BoxFit.fill,
+                      ),
                     ),
                     OnTAp: () {
                       Navigator.push(context,

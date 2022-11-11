@@ -2,6 +2,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:stylish_sathi/Constant/colors.dart';
 import 'package:stylish_sathi/ReviewTabBarPage.dart';
+import 'package:stylish_sathi/SecondPage.dart';
 
 import '../ServicesTabBarPage.dart';
 
@@ -16,21 +17,14 @@ class PhotoSlider_Section extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CarouselSlider(
-        items: bottomoptions,
-        options: CarouselOptions(
-          height: 260,
-          aspectRatio: 16 / 9,
-          viewportFraction: 0.9,
-          initialPage: 0,
-          enableInfiniteScroll: true,
-          reverse: false,
-          //autoPlay: true,
-          autoPlayInterval: Duration(seconds: 3),
-          autoPlayAnimationDuration: Duration(milliseconds: 1000),
-          autoPlayCurve: Curves.fastOutSlowIn,
-          enlargeCenterPage: true,
-          scrollDirection: Axis.horizontal,
-        ));
+      options: CarouselOptions(
+        aspectRatio:488/310,
+        viewportFraction: 1,
+        enlargeCenterPage: true,
+      ), items: [
+        Image.asset("images/Storephoto.png",fit: BoxFit.fill,width: double.infinity,),
+    ],
+    );
   }
 }
 
@@ -194,7 +188,7 @@ class TabBarbody_Section extends StatelessWidget {
         children: [
           services(),
           review(),
-          Text("sdvscsdc"),
+          Text("About us"),
 
           //about,
         ],

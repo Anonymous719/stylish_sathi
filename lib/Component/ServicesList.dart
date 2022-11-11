@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../Constant/colors.dart';
+
 class Services_list extends StatelessWidget {
   final String Service_Name;
   final Widget PhotoWidget;
@@ -13,7 +15,7 @@ class Services_list extends StatelessWidget {
         Container(
           margin: EdgeInsets.all(10.0),
           decoration:
-              BoxDecoration(color: Colors.orange, shape: BoxShape.circle),
+              BoxDecoration(color: IconColor, shape: BoxShape.circle),
           child: SizedBox(width: 90, height: 90, child: PhotoWidget),
         ),
         Text(

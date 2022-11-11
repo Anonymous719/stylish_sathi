@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
+import 'Constant/colors.dart';
+
 class review extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
         child: ListView(scrollDirection: Axis.vertical, children: [
-      Column(children: [ReviewTabCardInfo()])
+      Column(children: [ReviewTabCardInfo(),ReviewTabCardInfo()])
     ]));
   }
 }
@@ -28,44 +30,36 @@ class _ReviewTabCardInfoState extends State<ReviewTabCardInfo> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      'Baral',
+                      'John Doe',
                       style:
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                     ),
-                    Text(
-                      'Baral',
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                    SizedBox(width: 140),
+                    Row(
+                      children: [
+                        Icon(Icons.star,color: IconColor,),
+                        Icon(Icons.star,color: IconColor,),
+                        Icon(Icons.star,color: IconColor,),
+                        Icon(Icons.star,color: IconColor,),
+                        Icon(Icons.star,color: IconColor,),
+                      ],
                     ),
-                    Text(
-                      'Baral',
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                    ),
-                    // Row(
-                    //   children: [
-                    //     Icon(Icons.star),
-                    //     Icon(Icons.star),
-                    //     Icon(Icons.star),
-                    //     Icon(Icons.star),
-                    //     Icon(Icons.star),
-                    //   ],
-                    // ),
                   ],
                 ),
                 SizedBox(
                   width: MediaQuery.of(context).size.width * 0.85,
+                  height: 20,
                   child: Text(
-                    "hffhcjasdfghjasdfghjsdfghjsdfghjdfghn jfghjhszdhgftxfchgvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv",
+                    "The review goes here",
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
                   ),
                 ),
+
               ],
-            ))
+            )),
       ],
     );
   }

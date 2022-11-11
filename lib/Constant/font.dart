@@ -1,4 +1,4 @@
-// import 'package:flutter/cupertino.dart';
-// import 'package:google_fonts/google_fonts.dart';
+ import 'package:flutter/cupertino.dart';
+ import 'package:google_fonts/google_fonts.dart';
 
-// TextStyle Montserratt = GoogleFonts.Montserrat();
+ TextStyle Montserratt = GoogleFonts.getFont('Montserrat');

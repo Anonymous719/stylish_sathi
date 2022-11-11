@@ -1,4 +1,3 @@
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
 import 'Section/SecondpageSection.dart';
@@ -17,7 +16,7 @@ class _storepageState extends State<storepage> with TickerProviderStateMixin {
         Container(
           margin: EdgeInsets.all(10.0),
           decoration: BoxDecoration(
-              //color: Colors.orange,
+
               ),
           child: Container(
             child: Image(
