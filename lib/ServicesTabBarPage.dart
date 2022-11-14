@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stylish_sathi/Constant/font.dart';
+import 'package:stylish_sathi/Screen/SelectStylist.dart';
 
 import 'Constant/colors.dart';
 
@@ -14,7 +15,10 @@ class services extends StatelessWidget {
           style: kNumans_400,
         ),
         backgroundColor: kIconColor,
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(context,
+              MaterialPageRoute(builder: (builder) => SelectStylist()));
+        },
       ),
       body: Container(
           child: ListView(scrollDirection: Axis.vertical, children: [
