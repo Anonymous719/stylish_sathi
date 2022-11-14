@@ -40,27 +40,27 @@ class _ReviewTabCardInfoState extends State<ReviewTabCardInfo> {
                     Icon(
                       size: 17.5,
                       Icons.star,
-                      color: IconColor,
+                      color: kIconColor,
                     ),
                     Icon(
                       size: 17.5,
                       Icons.star,
-                      color: IconColor,
+                      color: kIconColor,
                     ),
                     Icon(
                       size: 17.5,
                       Icons.star,
-                      color: IconColor,
+                      color: kIconColor,
                     ),
                     Icon(
                       size: 17.5,
                       Icons.star,
-                      color: IconColor,
+                      color: kIconColor,
                     ),
                     Icon(
                       size: 17.5,
                       Icons.star,
-                      color: IconColor,
+                      color: kIconColor,
                     ),
                   ],
                 ),

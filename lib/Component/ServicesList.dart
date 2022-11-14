@@ -15,7 +15,7 @@ class Services_list extends StatelessWidget {
       children: [
         Container(
           margin: EdgeInsets.all(10.0),
-          decoration: BoxDecoration(color: IconColor, shape: BoxShape.circle),
+          decoration: BoxDecoration(color: kIconColor, shape: BoxShape.circle),
           child: SizedBox(width: 90, height: 90, child: PhotoWidget),
         ),
         Text(

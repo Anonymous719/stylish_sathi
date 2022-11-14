@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:stylish_sathi/Constant/colors.dart';
 import 'package:stylish_sathi/Constant/font.dart';
 import 'package:stylish_sathi/ReviewTabBarPage.dart';
-import 'package:stylish_sathi/SecondPage.dart';
+import 'package:stylish_sathi/Screen/SecondPage.dart';
 
 import '../ServicesTabBarPage.dart';
 
@@ -70,11 +70,11 @@ class _ServiceName_SectionState extends State<ServiceName_Section> {
               setState(() {});
             },
             child: isFav
-                ? Icon(Icons.favorite, size: 25, color: FavColor)
+                ? Icon(Icons.favorite, size: 25, color: kFavColor)
                 : Icon(
                     Icons.favorite_border,
                     size: 25,
-                    color: FavColor,
+                    color: kFavColor,
                   ),
           ),
         ),
@@ -112,7 +112,7 @@ class OpeningTime_Section extends StatelessWidget {
         Icon(
           Icons.timer,
           size: 20,
-          color: IconColor,
+          color: kIconColor,
         ),
         Text(
           " Open Now: 9:00 am-7:30 pm",
@@ -137,7 +137,7 @@ class ShowMap_Section extends StatelessWidget {
           Icon(
             Icons.near_me,
             size: 20,
-            color: IconColor,
+            color: kIconColor,
           ),
           Text(
             " Show on map",
@@ -165,7 +165,7 @@ class TabBarHeading_Section extends StatelessWidget {
         controller: tabController,
         labelColor: Colors.black,
         unselectedLabelColor: Colors.grey,
-        indicatorColor: IconColor,
+        indicatorColor: kIconColor,
         indicatorWeight: 5,
         indicatorPadding: EdgeInsets.fromLTRB(0, 0, 0, 5),
         tabs: [

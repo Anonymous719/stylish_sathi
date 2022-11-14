@@ -13,7 +13,7 @@ class services extends StatelessWidget {
           "Book Now",
           style: kNumans_400,
         ),
-        backgroundColor: IconColor,
+        backgroundColor: kIconColor,
         onPressed: () {},
       ),
       body: Container(
@@ -74,7 +74,7 @@ class _ServiceTabCardInfoState extends State<ServiceTabCardInfo> {
             children: [
               Container(
                 decoration: BoxDecoration(
-                    color: isSelected ? IconColor : Colors.transparent,
+                    color: isSelected ? kIconColor : Colors.transparent,
                     borderRadius: BorderRadius.circular(15),
                     border: isSelected
                         ? null

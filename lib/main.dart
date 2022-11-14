@@ -3,7 +3,8 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:stylish_sathi/Constant/colors.dart';
 
-import 'FirstPage.dart';
+import 'Screen/FirstPage.dart';
+import 'Screen/LoginPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: startpage(),
+      home: LogIn_Page(),
     );
   }
 }
@@ -36,7 +37,7 @@ class startpage extends StatelessWidget {
     return Scaffold(
       extendBody: true,
       backgroundColor: Colors.white,
-      body: homepage(),
+      body: FirstPage(),
       bottomNavigationBar: Theme(
         data: Theme.of(context)
             .copyWith(iconTheme: IconThemeData(color: Colors.white)),
@@ -44,7 +45,7 @@ class startpage extends StatelessWidget {
           items: bottomoptions,
           height: 60,
           backgroundColor: Colors.transparent,
-          color: IconColor,
+          color: kIconColor,
         ),
       ),
     );
