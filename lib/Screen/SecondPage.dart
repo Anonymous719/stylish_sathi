@@ -33,43 +33,45 @@ class _storepageState extends State<storepage> with TickerProviderStateMixin {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.white,
-        body: SafeArea(
-          child: Column(
-            children: [
-              PhotoSlider_Section(bottomoptions: bottomoptions),
-              Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    ServiceName_Section(
-                      ServiceName: "The Next Level",
-                    ),
-                    SizedBox(
-                      height: 7,
-                    ),
-                    Address_Section(
-                      Address: "Pulchowk, Lalitpur",
-                    ),
-                    SizedBox(
-                      height: 7,
-                    ),
-                    OpeningTime_Section(),
-                    SizedBox(
-                      height: 7,
-                    ),
-                    ShowMap_Section(
-                      OnTap: () {},
-                    ),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    TabBarHeading_Section(tabController: tabController),
-                    TabBarbody_Section(tabController: tabController)
-                  ],
+        body: SingleChildScrollView(
+          child: SafeArea(
+            child: Column(
+              children: [
+                PhotoSlider_Section(bottomoptions: bottomoptions),
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      ServiceName_Section(
+                        ServiceName: "The Next Level",
+                      ),
+                      SizedBox(
+                        height: 7,
+                      ),
+                      Address_Section(
+                        Address: "Pulchowk, Lalitpur",
+                      ),
+                      SizedBox(
+                        height: 7,
+                      ),
+                      OpeningTime_Section(),
+                      SizedBox(
+                        height: 7,
+                      ),
+                      ShowMap_Section(
+                        OnTap: () {},
+                      ),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      TabBarHeading_Section(tabController: tabController),
+                      TabBarbody_Section(tabController: tabController)
+                    ],
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
