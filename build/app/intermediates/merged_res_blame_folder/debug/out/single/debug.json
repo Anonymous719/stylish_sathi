@@ -1,11 +1,11 @@
 [
     {
-        "merged": "E:\\Projects\\stylish_sathi\\build\\app\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "E:\\Projects\\stylish_sathi\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
-    },
-    {
         "merged": "E:\\Projects\\stylish_sathi\\build\\app\\intermediates\\merged_res\\debug\\drawable_launch_background.xml.flat",
         "source": "E:\\Projects\\stylish_sathi\\android\\app\\src\\main\\res\\drawable\\launch_background.xml"
+    },
+    {
+        "merged": "E:\\Projects\\stylish_sathi\\build\\app\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "E:\\Projects\\stylish_sathi\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
         "merged": "E:\\Projects\\stylish_sathi\\build\\app\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
@@ -20,11 +20,11 @@
         "source": "E:\\Projects\\stylish_sathi\\android\\app\\src\\main\\res\\drawable-v21\\launch_background.xml"
     },
     {
-        "merged": "E:\\Projects\\stylish_sathi\\build\\app\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "E:\\Projects\\stylish_sathi\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "E:\\Projects\\stylish_sathi\\build\\app\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "E:\\Projects\\stylish_sathi\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Projects\\stylish_sathi\\build\\app\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "E:\\Projects\\stylish_sathi\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     }
 ]

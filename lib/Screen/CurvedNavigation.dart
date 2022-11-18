@@ -17,8 +17,7 @@ class CurvedNavigationPage extends StatefulWidget {
 class _CurvedNavigationPageState extends State<CurvedNavigationPage> {
   final screen = [
     FirstPage(),
-    SelectStylist(),
-    //LocationPage(),
+    LocationPage(),
     CalenderPage(),
     CartPage(),
     ProfilePage(),
